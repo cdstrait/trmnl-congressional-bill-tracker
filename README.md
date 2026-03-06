@@ -11,6 +11,7 @@ Track any bill in the U.S. Congress and display its status on a [TRMNL](https://
 ---
 
 ![TRMNL Bill Tracker Display](preview.png)
+*Screenshot shows an enhanced version of the included template.*
 
 ## What it does
 
@@ -89,7 +90,7 @@ Edit `bills.json` to specify the bill you want to track:
       "congress": 119,
       "type": "s",
       "number": 1546,
-      "description": "Patent Eligibility Restoration Act of 2025"
+      "note": "Patent Eligibility Restoration Act of 2025"
     }
   ]
 }

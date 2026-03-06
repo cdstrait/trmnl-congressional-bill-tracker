@@ -6,7 +6,6 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY fetch_and_push.py .
-COPY bills.json .
 
 RUN mkdir -p data
 
