@@ -2,7 +2,7 @@
 
 Track any bill in the U.S. Congress and display its status on a [TRMNL](https://usetrmnl.com) e-ink device. The tracker fetches live data from the [Congress.gov API](https://api.congress.gov/) and pushes updates to your TRMNL screen via webhook.
 
-![TRMNL display](https://usetrmnl.com/images/product/product-front.png)
+> **WARNING:** This project was created with the assistance of AI. I am not a programmer. Use at your own risk.
 
 ## What it does
 
