@@ -1,0 +1,84 @@
+<link rel="stylesheet" href="https://usetrmnl.com/css/latest/plugins.css">
+<script src="https://usetrmnl.com/js/latest/plugins.js"></script>
+
+<!-- Title Bar -->
+<div class="title_bar">
+    <span class="title">{{ title }}</span>
+    <span class="instance">{{ bill_type | upcase }} {{ bill_number }}</span>
+</div>
+
+<!-- Status Section -->
+<div style="background: #1a1a1a; padding: 1rem;">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div>
+            <span class="label" style="color: white;">{{ congress }}th Congress</span>
+        </div>
+        <div>
+            <span class="label label--outline">{{ status }}</span>
+        </div>
+    </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Key Stats -->
+<div style="background: #e8e8e8; padding: 1rem;">
+    <div class="grid grid--2 gap-4">
+        <div class="item">
+            <div class="label">Introduced</div>
+            <div class="value value--lg">{{ introduced_date }}</div>
+        </div>
+        <div class="item">
+            <div class="label">Cosponsors</div>
+            <div class="value value--lg">{{ cosponsor_count }}</div>
+        </div>
+    </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Sponsor & Committee -->
+<div style="padding: 1rem;">
+    <div class="grid grid--2 gap-4">
+        <div class="item">
+            <div class="label label--underline">Lead Sponsor</div>
+            <div class="value">{{ sponsor_name }}</div>
+            <div class="description">{{ sponsor_party }}-{{ sponsor_state }}</div>
+        </div>
+        <div class="item">
+            <div class="label label--underline">Committee</div>
+            <div class="value">{{ committee_name }}</div>
+            <div class="description">{{ committee_chamber }}</div>
+        </div>
+    </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Latest Action -->
+<div style="background: #d0d0d0; padding: 1rem;">
+    <div class="label mb-2">Latest Action - {{ latest_action_date }}</div>
+    <div class="description">{{ latest_action_text }}</div>
+</div>
+
+<!-- Related Bills -->
+{% if related_bill_type %}
+<div class="divider"></div>
+<div style="padding: 1rem;">
+    <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <span class="label label--gray">Related Bill:</span>
+        <span class="value">{{ related_bill_type | upcase }} {{ related_bill_number }}</span>
+        <span class="description">- {{ related_bill_relationship }}</span>
+    </div>
+</div>
+{% endif %}
+
+<div class="divider"></div>
+
+<!-- Footer -->
+<div style="padding: 0.75rem;">
+    <div style="display: flex; justify-content: space-between;">
+        <div class="description">Congressional Bill Tracker</div>
+        <div class="description">Updated {{ last_updated }}</div>
+    </div>
+</div>
