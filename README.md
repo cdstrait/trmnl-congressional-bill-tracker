@@ -170,16 +170,6 @@ Congress.gov API  --->  fetch_and_push.py  --->  TRMNL Webhook
 6. Saves the new hash to avoid redundant pushes
 7. Sleeps for `UPDATE_INTERVAL` seconds, then repeats
 
-## Rate limits
-
-| Service | Limit |
-|---------|-------|
-| Congress.gov API | 5,000 requests/hour |
-| TRMNL (standard) | 12 pushes/hour |
-| TRMNL+ | 30 pushes/hour |
-
-The default 1-hour interval uses ~5 API calls per cycle and at most 1 TRMNL push, well within both limits.
-
 ## Project structure
 
 ```
