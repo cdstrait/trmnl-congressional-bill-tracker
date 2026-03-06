@@ -10,6 +10,8 @@ Track any bill in the U.S. Congress and display its status on a [TRMNL](https://
 
 ---
 
+![TRMNL Bill Tracker Display](preview.png)
+
 ## What it does
 
 - Fetches real-time bill data from Congress.gov (status, sponsor, committees, cosponsors, latest action, related bills)
