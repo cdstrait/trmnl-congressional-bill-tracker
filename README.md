@@ -11,7 +11,6 @@ Track any bill in the U.S. Congress and display its status on a [TRMNL](https://
 ---
 
 ![TRMNL Bill Tracker Display](preview.png)
-*Screenshot shows an enhanced version of the included template.*
 
 ## What it does
 
